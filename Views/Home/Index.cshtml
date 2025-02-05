@@ -1,0 +1,215 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="split-page">
+    <div>
+        <br>
+        <h1>Welcome!</h1>
+        <!-- <img src="static/IMG_20200724_122912.jpg" alt="" class="home-image"> -->
+        <br>
+        <p>My name is <strong>Bill O'Hanlon</strong>, and welcome to my online CV. This website serves as a more accessible way to showcase my experience, education, projects, achievements and interests, than a conventional CV.</p>
+        <p>I am a highly motivated and skilled software engineer, looking for a long term employment. I am very outgoing and enjoy keeping busy, evident from my long career development and multiple past times.</p>
+        <p>If you have any questions or possible opportunities, feel free to reach out through any of the contact details listed below.</p>
+    </div>
+    <div id="cv-link" style="display: none;">
+        <p><a href="/download">Link to pdf version of CV</a></p>
+    </div>
+</div>
+<br>
+<div class="work-experience">
+    <h2 id="work">Work Experience</h2>
+    <div class="page">
+        <br>
+        <h4>JP Morgan, <small class="text-muted">Software Engineer I & II</small></h4>
+        <ul>
+            <li><p>I worked on each part of the technology stack for an in house application with high data throughput, becoming the lead and SME on multiple projects.</p></li>
+            <li><p>My responsibilities were varied and akin to a Full Stack Developer. These included creating new functionality, maintaining existing services and operations, testing and creating automation.</p></li>
+            <li><p>I was promoted to Software Engineer II at the beginning of 2024.</p></li>
+            <li><p>I gained a wealth of knowledge and expertise, particularly in C#, and CI/CD.</p></li>
+            <li><p>Technologies used : ASP.NET MVC, C#, AngularJs, Javascript, HTML, CSS, SQL Server</p></li>
+        </ul>
+
+        <br>
+
+        <h4>AWS Simple Email Service, <small class="text-muted">Software Dev Engineer Intern</small></h4>
+        <ul>
+            <li><p>I worked on improving and extending the testing framework used to affirm the status of AWS SES products and regions. This was a large project which introduced changes to reduce developer effort when creating and maintaining tests, along with alarm / logging standardisation.</p></li>
+            <li><p>This was a five month long internship which finished at the end of December 2021. I learnt quite a lot from this internship, both in terms of soft and hard skills.</p></li>
+            <li><p>Technologies used : Java, Spring, Ruby, AWS products</p></li>
+        </ul>
+
+        <br>
+
+        <h4>DCU, <small class="text-muted">Lab Tutor</small></h4>
+        <ul>
+            <li><p>I’ve worked with DCU on three separate occasions as a part time lab tutor. On the first occasion, I tutored first year software engineering students for their Python labs, as part of their year long programming module. Secondly, in my third year I tutored second year students for their semester long module on assembly level programming. Finally, I worked as a general lab tutor for the first semester of my final year. This involved tutoring both first and second labs over various computing modules.</p></li>
+            <li><p>Tutoring other computing students improved my communication skills and added to my understanding of languages / technologies I'd already learnt.</p></li>
+        </ul>
+
+        <br>
+
+        <h4>Hospitality Experience</h4>
+        <ul>
+            <li><p>I have worked in various hotels, bars and restaurants throughout my education. While this doesn't involve software engineering, I think it displays my work ethic, and contributed to my teamwork skills and ability to work under pressure.</p></li>
+        </ul>
+    </div>
+</div>
+<br>
+<br>
+<div class="education">
+    <h2 id="edu">Education</h2>
+    <div class="page">
+        <br>
+        <h3>Formal Education</h3><br>
+        <ul>
+            <li><p>BSc. Computer Applications & Software Engineering from DCU, achieving a first class honours (1.1).</p></li>
+            <li><p>Received 542 points in my leaving cert.</p></li>
+        </ul>
+        <br>
+    
+        <h3>Language Experience:</h3>
+        <br>
+        <ul>
+            <li><p>C#</p></li>
+            <li><p>Python</p></li>
+            <li><p>Java</p></li>
+            <li><p>HTML</p></li>
+            <li><p>CSS</p></li>
+            <li><p>Javascript</p></li>
+            <li><p>SQL</p></li>
+            <li><p>AngularJs</p></li>
+        </ul>
+    
+        <br>
+
+        <h3>Technology Experience:</h3>
+        <br>
+        <ul>
+            <li><p>Visual Studio</p></li>
+            <li><p>MySQL Server</p></li>
+            <li><p>Git (CI/CD)</p></li>
+            <li><p>AWS technologies : SES, SNS, S3, EC2, Cloudwatch and Route 53</p></li>
+            <li><p>Flask</p></li>
+            <li><p>Numpy</p></li>
+            <li><p>Keras</p></li>
+        </ul>
+    </div>
+</div>
+<br>
+<br>
+<div class="projects">
+    <h2 id="pro">Projects</h2>
+    <div class="split-page">
+        <br>
+        <div>
+            <h4>Orthodox MMA Trainer - Final Year Thesis</h4>
+            <br>
+            <p>For my final year thesis, my project partner and I created a progressive web application which utilised pose estimation and computer vision to predict a user's technique / form in regards to certain strikes used within mixed martial arts, such as a jab.</p>
+
+            <p>We created datasets by recording poor and proper technique, reducing the dimensionality of the data and then feeding this data to <a href="https://google.github.io/mediapipe/solutions/pose.html">BlazePose.</a> This is a pose estimation pipeline which was cutting edge at the time. It produces pose estimations, frame-by-frame, in the form of 32 pose landmarks. This data was then used to create datasets and train multiple classifiers. The resulting dataset is available <a href="https://www.kaggle.com/billohanlon/jab-technique-prediction-with-body-landmark-data">here.</a></p>
+
+            <p>The web application was written using Flask, Python, Javascript (used for video encoding), HTML and CSS, and was hosted on an AWS EC2 instance. GoLang was also used to produce an API for storing feedback reports produced by users and user authentification.</p>
+
+            <img src="static/sys_arch.JPG" alt="" class="graph-image">
+
+            <p>For more detail, along with a user guide and technical specification please refer to the <a href="https://github.com/billoh28/OrthodoxMMA">Project Github Repository</a></p>
+            <p>The web application is available through the following link: <a href="https://orthodoxmma.com/">Orthodox MMA</a></p>
+            <br>
+            <br>
+    
+            <h4>Sign Language Translator - Third Year Project</h4>
+            <br>
+    
+            <p>As our third year project, my project partner and I designed and trained Neural Networks to translate Irish Sign Language from prerecorded video into audio.</p>
+            <p>The program we produced utilised Convoluted Neural Networks (CNN) and computer vision libraries, such as Keras and Numpy, and was written in Python.</p>
+    
+            <br>
+    
+            <p>The functions of this program are as follows:</p>
+                <ul>
+                    <li><p>Converts a video into frames, applying image processing to convert the frames into multi-dimensional arrays and feed them to a trained CNN model.</p></li>
+                    <li><p>Accumulates the output of the CNN models to plain text.</p></li>
+                    <li><p>Convert the text produced by the CNN into audio, and save the audio file into the current working directory.</p></li>
+                </ul>
+    
+            <br>
+    
+            <p>The graph and confusion matrix below depict the accuracy of the ensemble model. The orange line in the graph shows the number of correct predictions for that letter sign pair in a test dataset, while the blue line is the number of incorrect predictions for that pair.</p>
+            
+            <img src="static/nn_result.JPG" alt="" class="graph-image">
+    
+            <p>This communication channel has the potential to greatly decrease the impacts of deafness, and other communication disorders, which could reduce loneliness and isolation in these communities.</p>
+    
+            <p>We received a first class honours in this project.</p>
+    
+            <!-- <a href="https://student.computing.dcu.ie/~ohanlow2/CA326/Pages/index.html">Project Blog</a></p> -->
+    
+            <a href="https://github.com/billoh28/Sign-Language-Translator">Project Github Repository</a></p>
+    
+            <br>
+            <br>
+    
+            <!-- <h4>Network API - Alternate Intra</h4>
+            <br>
+            <p>This was part of a DCU group project meant to replicate work placement for those who lost their jobs due to COVID-19.</p>
+            <p>I worked alongside a fellow software engineering student to develop a Network API for a network of smart hand sanitiser devices. The API was wrote in Python 3 using Flask as a framework.</p>
+            <p>Functions of the API:</p>
+                <ul>
+                    <li><p>Records usage statistics of the individual hand sanitiser dispensers.</p></li>
+                    <li><p>Performs data analytics on the usage statistics.</p></li>
+                    <li><p>Displays status of diapensers, usage statistics and data analytics report at specified endpoints requiring an API key.</p></li>
+                </ul>
+    
+            <p>The GitLab repository this code is contained within is private as it contains Firebase credentials.</p>
+                
+            <br>
+            <br> -->
+    
+            <h4>This CV Website</h4>
+            <br>
+    
+            <p>Code for this website: <a href="https://github.com/billoh28">Project Github Repository</a></p>
+    
+            <br>
+            <br>
+    
+            <h4>Links</h4>
+
+            <br>
+    
+            <p>The code for these projects, and many more, are available on my github:</p>
+    
+            <ul>
+                <li><a href="https://github.com/billoh28?tab=repositories">My GitHub</a></li>
+            </ul>
+    
+        </div>
+    
+    </div>
+</div>
+<br>
+<div class="achievements">
+    <h2 id="ach">Personal Achievements</h2>
+    <div class="page">
+        <br>
+        <ul>
+            <li><p>I completed a J1 program in the summer of 2019.</p></li>
+            <li><p>During secondary school, I taught a basic computer class, to senior citizens every Tuesday after school. The program ran for three months and the participants learned everything from turning on a computer to setting up their very own email.</p></li>
+            <li><p>I was also awarded a bronze medal Gaise Presidential, for completing various achievements including thirteen weeks of community involvement.</p></li>
+        </ul>
+    </div>
+</div>
+<br>
+<div class="Interests">
+    <h2 id="int">Interests</h2>
+    <div class="page">
+        <br>
+        <ul>
+            <li><p>I'm a person who enjoys being active and adventuring. For instance, I enjoy going on hikes. My friends and I have completed numerous hikes and trails across America, Canada, Europe, Australasia and Ireland, namely climbing to Clouds Rest in Yosemite National Park, California and Carrauntoohil in Kerry.</p></li>
+            <li><p>Outside of exercising, in my spare time I draw, paint and create stencils. Here's a link to some of my art: <a href="/gallery">Gallery</a></p></p></li>
+        </ul>
+    </div>
+</div>
+<br>
+
